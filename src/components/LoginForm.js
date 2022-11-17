@@ -1,4 +1,4 @@
-
+import {Container, Row, Col, Form, Button} from 'react-bootstrap'
 
 import { useState } from 'react';
 import * as usersService from '../utilities/users-service';
@@ -32,6 +32,7 @@ async function handleSubmit(evt) {
 }
 
 return (
+  <Container>
   <div>
     <h1>Login!</h1>
     <div className="form-container" onSubmit={handleSubmit}>
@@ -40,10 +41,13 @@ return (
         <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
         <label>Password</label>
         <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-        <button type="submit">LOG IN</button>
+        <Button type="submit" variant="info">LOG IN</Button>
       </form>
+
+      
     </div>
     <p className="error-message">&nbsp;{error}</p>
   </div>
+  </Container>
 );
 }
