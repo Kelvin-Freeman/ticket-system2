@@ -15,6 +15,7 @@ const AuthPage = (props) => {
     if (showSignUp) {
         linkText = ' Login'
         loginSentence = 'Already have an account?'
+        
     } else {
         linkText = ' SignUp'
         loginSentence = 'Need an account?'

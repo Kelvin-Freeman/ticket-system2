@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom'
 
 // const ticket = tickets[0]
 
-const Ticket = () => {
+export const Ticket = () => {
     const {tId} = useParams()
     const [message, setMessage] = useState('')
     const [ticket, setTicket] = useState('')
@@ -64,4 +64,3 @@ const Ticket = () => {
     )
 }
 
-export default Ticket

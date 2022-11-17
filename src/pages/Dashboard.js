@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import { TicketTable} from "../components/TicketTable"
 import tickets from '../../src/data/dummy-tickets.json'
-// import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp"
+import { PageBreadcrumb } from "../components/breadcrumb/Breadcrumb"
 import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
@@ -10,7 +10,7 @@ const Dashboard = () => {
         <Container>
             <Row>
                 <Col>
-                    {/* <PageBreadcrumb page="Dashboard" /> */}
+                    <PageBreadcrumb page="Dashboard" />
                 </Col>
             </Row>
             <Row>

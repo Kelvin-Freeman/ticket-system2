@@ -4,9 +4,9 @@ import {Routes, Route} from 'react-router-dom'
 import { getUser } from './utilities/users-service';
 import AuthPage from './pages/AuthPage';
 import Dashboard from './pages/Dashboard';
-import Ticket from './pages/Tickets'
 import { AddTicket } from './pages/AddTicket';
 import { TicketLists } from './pages/TicketLists';
+import { Ticket } from './pages/Tickets'
 // import OrderHistoryPage from './pages/OrderHistoryPage';
 import NavBar from './components/NavBar';
 
@@ -24,6 +24,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/add-ticket" element={<AddTicket />} />
             <Route path="/tickets" element={<TicketLists />} />
+            <Route path="/ticket/:tId" element={<Ticket />} />
             </Routes>
 
         </>
