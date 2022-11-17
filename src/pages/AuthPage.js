@@ -25,7 +25,7 @@ const AuthPage = (props) => {
 
     return(
         <main>
-            <h1>Authentication Page</h1>
+            <h1>Welcome to Your Web Helper</h1>
             <div>
                 <p className="login-text">{loginSentence}<a className='login-link' href='#' onClick={event => {setShowSignUp(!showSignUp); loginLink.textContent = ' SignUp' }}>{linkText} </a></p>
                 <div className='sign-up'>
