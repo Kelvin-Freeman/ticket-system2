@@ -1,16 +1,16 @@
 import React from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
-import { TicketTable} from "../../components/ticket-table/TicketTable.comp"
-import tickets from '../../../src/assets/data/dummy-tickets.json'
-import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp"
+// import { TicketTable} from "../../components/ticket-table/TicketTable.comp"
+// import tickets from '../../../src/assets/data/dummy-tickets.json'
+// import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp"
 import { Link } from 'react-router-dom'
 
-export const Dashboard = () => {
+const Dashboard = () => {
     return(
         <Container>
             <Row>
                 <Col>
-                    <PageBreadcrumb page="Dashboard" />
+                    {/* <PageBreadcrumb page="Dashboard" /> */}
                 </Col>
             </Row>
             <Row>
@@ -37,10 +37,12 @@ export const Dashboard = () => {
 
             <Row>
                 <Col className="recent-ticket">
-                    <TicketTable tickets={tickets} />
+                    {/* <TicketTable tickets={tickets} /> */}
                 </Col>
             </Row>
 
         </Container>
     )
 }
+
+export default Dashboard

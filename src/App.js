@@ -3,7 +3,8 @@ import {useState} from 'react'
 import {Routes, Route} from 'react-router-dom'
 import { getUser } from './utilities/users-service';
 import AuthPage from './pages/AuthPage';
-import NewOrderPage from './pages/NewOrderPage';
+import Dashboard from './pages/Dashboard';
+import Ticket from './pages/Tickets'
 import OrderHistoryPage from './pages/OrderHistoryPage';
 import NavBar from './components/NavBar';
 
@@ -18,8 +19,8 @@ function App() {
           <NavBar user={user} />
           
           <Routes>
-            <Route path="/orders/new" element={<NewOrderPage />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/tickets" element={<Ticket />} />
           </Routes>
         </>
       ) : (

@@ -36,11 +36,15 @@ const NavBar = ({user, setUser}) => {
             
         <LinkContainer to='/dashboard'><Nav.Link>Dashboard</Nav.Link></LinkContainer> 
         <LinkContainer to='/tickets'><Nav.Link>Tickets</Nav.Link></LinkContainer>
-        <Nav.Link onClick={redirectToLogin}>Logout</Nav.Link>
+        {/* <Nav.Link onClick={redirectToLogin}>Logout</Nav.Link> */}
         
-        {user ? <span>  Welcome, {user.name}</span> : ''}
-        {user ? <Link to='' onClick={handleLogOut}>&nbsp;&nbsp;Log Out</Link> : ''}
+       
+                    <Nav.Link>
+                    {user ? <span>  Welcome, {user.name}</span> : ''}
+                    </Nav.Link>
 
+                    {user ? <Link to='' onClick={handleLogOut}>&nbsp;&nbsp;Log Out</Link> : ''}
+                       
                  </Nav>
             </Navbar.Collapse>
         </Navbar>

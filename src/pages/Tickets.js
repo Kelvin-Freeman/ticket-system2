@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import {Container, Row, Col, Button} from 'react-bootstrap'
-import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp'
-import tickets from '../../assets/data/dummy-tickets.json'
-import { MessageHistory } from '../../components/message-history/MessageHistory.comp'
-import { UpdateTicket } from '../../components/update-ticket/UpdateTicket.comp'
+import { PageBreadcrumb } from '../components/breadcrumb/Breadcrumb'
+import tickets from '../data/dummy-tickets.json'
+import { MessageHistory } from '../message-history/MessageHistory'
+import { UpdateTicket } from '../update-ticket/UpdateTicket'
 import { useParams } from 'react-router-dom'
 // import { array } from 'prop-types'
 
 // const ticket = tickets[0]
 
-export const Ticket = () => {
+const Ticket = () => {
     const {tId} = useParams()
     const [message, setMessage] = useState('')
     const [ticket, setTicket] = useState('')
@@ -63,3 +63,5 @@ export const Ticket = () => {
         </Container>
     )
 }
+
+export default Ticket
