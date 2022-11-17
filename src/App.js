@@ -6,7 +6,8 @@ import AuthPage from './pages/AuthPage';
 import Dashboard from './pages/Dashboard';
 import Ticket from './pages/Tickets'
 import { AddTicket } from './pages/AddTicket';
-import OrderHistoryPage from './pages/OrderHistoryPage';
+import { TicketLists } from './pages/TicketLists';
+// import OrderHistoryPage from './pages/OrderHistoryPage';
 import NavBar from './components/NavBar';
 
 import './App.css';
@@ -21,9 +22,10 @@ function App() {
           
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/tickets" element={<Ticket />} />
             <Route path="/add-ticket" element={<AddTicket />} />
-          </Routes>
+            <Route path="/tickets" element={<TicketLists />} />
+            </Routes>
+
         </>
       ) : (
         <>
