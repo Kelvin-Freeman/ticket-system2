@@ -5,6 +5,7 @@ import { getUser } from './utilities/users-service';
 import AuthPage from './pages/AuthPage';
 import Dashboard from './pages/Dashboard';
 import Ticket from './pages/Tickets'
+import { AddTicket } from './pages/AddTicket';
 import OrderHistoryPage from './pages/OrderHistoryPage';
 import NavBar from './components/NavBar';
 
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/tickets" element={<Ticket />} />
+            <Route path="/add-ticket" element={<AddTicket />} />
           </Routes>
         </>
       ) : (
