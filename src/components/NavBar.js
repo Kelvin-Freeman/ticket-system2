@@ -14,9 +14,9 @@ const NavBar = ({user, setUser}) => {
     }
 
     const navigate = useNavigate();
-    const redirectToLogin = () => {
-        navigate('/')
-    }
+    // const redirectToLogin = () => {
+    //     navigate('/')
+    // }
     return(
     <nav>
         <Navbar collapseOnSelect bg="info" variant="dark" expand="md">

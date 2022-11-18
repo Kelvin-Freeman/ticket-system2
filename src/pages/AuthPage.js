@@ -2,13 +2,13 @@
 
 import SignUpForm from "../components/SignUpForm"
 import LoginForm from "../components/LoginForm"
-import {useState, useEffect} from 'react'
-import { Link } from "react-router-dom"
+import {useState} from 'react'
+// import { Link } from "react-router-dom"
 
 const AuthPage = (props) => {
     const [showSignUp, setShowSignUp] = useState(true)
     const {setUser} = props
-    const loginText = document.querySelector('.login-text')
+    // const loginText = document.querySelector('.login-text')
     const loginLink = document.querySelector('.login-link')
     let linkText = ''
     let loginSentence = ''
